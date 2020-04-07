@@ -58,6 +58,18 @@ body {
 
 .moving{
     position: absolute;
-    bottom:5rem;
+    bottom:6rem;
     left:2rem;
+}
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.logo{
+   width: 12rem;
+   height: 3rem ;
 }
