@@ -33,7 +33,7 @@ body {
     bottom: 2rem;
    left:2rem;
   }
-
+  
   .checkbox{
     border-radius: 50px;
   }
@@ -69,7 +69,12 @@ table, th, td {
   border: 1px solid black;
 }
 
+textarea{
+  border:none;
+  overflow: hidden;
+}
+
 .logo{
-   width: 12rem;
+   width: 11rem;
    height: 3rem ;
 }

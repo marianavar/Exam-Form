@@ -14,8 +14,8 @@
             <tr style="height: 15px;">
             <td style="height: 15px; width: 345px;">Provider_Logo</td>
             <td style="height: 15px; width: 374px;">
-            <p><strong>Telemedicine Exam Form&nbsp;</strong></p>
-            <p>Physician:&nbsp;&nbsp;</p>
+            <p><strong>Telemedicine Exam Form </strong></p>
+            <p>Physician:<input type="text" id="physician" name="physician_name"></p>
             </td>
             </tr>
             </tbody>
@@ -24,29 +24,29 @@
          <tbody>
             <tr>
             <td colspan="3" width="763">
-            <p style="padding-left: 270px;">&nbsp;<strong>Basic Info</strong></p>
+            <p style="padding-left: 315px;"><strong>Basic Info</strong></p>
             </td>
             </tr>
             <tr>
-            <td width="121">
-            <p>Date:<input type="text"> </p>
+            <td width="180">
+            <p>Date:<input type="date" id="exam_date" name="exam_date" style="width: 125px;"> </p>
             </td>
             <td width="300">
-            <p>Patient Last Name:<input type="text"></p>
+            <p>Patient Last Name:<input type="text"  id="patient_lname" name="patien_lname"></p>
             </td>
             <td width="342">
-            <p>Patient First Name:<input type="text"></p>
+            <p>Patient First Name:<input type="text"  id="patiet_fname" name="patien_fname"></p>
             </td>
             </tr>
             <tr>
-            <td width="121">
-            <p>DOB:<input type="text"></p>
+            <td width="161">
+            <p>DOB:<input type="date" id="DOB" name="DOB"></p>
             </td>
             <td width="300">
-            <p>MR#:<input type="text"></p>
+            <p>MR#:<input type="text" id="patient_MR" name="MR"></p>
             </td>
             <td width="342">
-            <p>Patient Phone #:<input type="text"></p>
+            <p>Patient Phone #:<input type="text" id="patient_phone" name="phone"></p>
             </td>
             </tr>
             </tbody>
@@ -55,28 +55,28 @@
             <tbody>
             <tr style="height: 35px;">
                 <td style="height: 35px;" colspan="3" width="763">
-                    <p style="padding-left: 270px;"><strong>&nbsp;Insurance Info</strong></p>
+                    <p style="padding-left: 308px;"><strong>Insurance Info</strong></p>
                     </td>
             </tr>
             <tr style="height: 35px;">
             <td style="height: 35px;" colspan="2" width="490">
-            <p>Carrier:<input type="text"></p>
+            <p>Carrier:<input type="text" id="insurance_carrier" name="insurance_carrier"></p>
             </td>
             <td style="height: 35px;" width="274">
-            <p>ID #:<input type="text"></p>
+            <p>ID #:<input type="text" id="insurrance_id" name="insurrance_id"></p>
             </td>
             </tr>
             <tr style="height: 35px;">
             <td style="height: 35px;" width="307">
-            <p>Carrier Phone #:<input type="text"></p>
+            <p>Carrier Phone #:<input type="text" id="insurrance_phone" name="insurrance_phone"></p>
             </td>
             <td style="height: 35px;" colspan="2" width="456">
-            <p>Group #:<input type="text"></p>
+            <p>Group #:<input type="text" id="insurrance_group" name="insurrance_group"></p>
             </td>
             </tr>
             <tr style="height: 35px;">
             <td style="height: 35px;" colspan="3" width="763">
-            <p>Seen in the last 7 days for same problem?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yes&nbsp;<input type="checkbox" > No <input type="checkbox"> </p>
+            <p>Seen in the last 7 days for same problem?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="Questions_Yes" name="Questions" value="yes"><label for="Questions_Yes">Yes</label><input type="radio" id="Questions_No" name="Questions" value="no"><label for="Questions_No">No</label> </p>
             </td>
             </tr>
             </tbody>
@@ -95,7 +95,7 @@
             </tr>
             <tr>
             <td width="763">
-            <p>Do you consent to the use of telemedicine in your medical care today? Yes &nbsp;<input type="checkbox"> No <input type="checkbox"></p>
+            <p>Do you consent to the use of telemedicine in your medical care today?<input type="radio" id="Questions_Yes" name="Questions" value="yes"><label for="Questions_Yes">Yes</label><input type="radio" id="Questions_No" name="Questions" value="no"><label for="Questions_No">No</label></p>
             </td>
             </tr>
             </tbody>
@@ -104,38 +104,40 @@
             <tbody>
             <tr style="height: 35px;">
             <td style="height: 35px; width: 764px;" colspan="3">
-            <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>&nbsp; &nbsp; &nbsp; &nbsp; Exam Details</strong></p>
+            <p style="padding-left: 320px;"><strong>Exam Details</strong></p>
             </td>
             </tr>
             <tr style="height: 59px;">
             <td style="height: 59px; width: 764px;" colspan="3">
-            <p>Patient verbally understands the risks and benefits of telemedicine as explained. <br> All questions regarding telemedicine answered. Yes &nbsp;<input type="checkbox"> No <input type="checkbox"></p>
+            <p>Patient verbally understands the risks and benefits of telemedicine as explained. <br> All questions regarding telemedicine answered.<input type="radio" id="Questions_Yes" name="Questions" value="yes"><label for="Questions_Yes">Yes</label><input type="radio" id="Questions_No" name="Questions" value="no"><label for="Questions_No">No</label></p>
             </td>
             </tr>
             <tr style="height: 35px;">
             <td style="height: 35px; width: 245px;">
-            <p>Call Start Time:<input type="text"></p>
+            <p>Call Start Time:<input type="text" id="call_start_time" name="call_start_time"></p>
             </td>
             <td style="height: 35px; width: 245px;">
-            <p>Call End Time:<input type="text"></p>
+            <p>Call End Time:<input type="text" id="call_end_time" name="call_end_time"></p>
             </td>
             <td style="height: 35px; width: 274px;">
-            <p>Image transmitted:&nbsp;&nbsp;&nbsp; Yes&nbsp; <input class="checkbox" type="checkbox"> No  <input class="checkbox" type="checkbox" ></p>
+            <p>Image transmitted:&nbsp;&nbsp;&nbsp; ;<input type="radio" id="Questions_Yes" name="Questions" value="yes"><label for="Questions_Yes">Yes</label><input type="radio" id="Questions_No" name="Questions" value="no"><label for="Questions_No">No</label</p>
             </td>
             </tr>
             <tr style="height: 53px;">
             <td style="height: 60px; width: 764px;" colspan="3">
-            <p>Chief Complaint:<input type="text"></p>
+            <p>Chief Complaint:</br><textarea id="complaint_note" name="complaint_note" rows="4" cols="125" maxlength="388">
+            </textarea></p>
             </td>
             </tr>
             <tr style="height: 100px;">
             <td style="height: 90px; width: 764px;" colspan="3">
-            <p>Notes:<input type="text"></p>
+            <p>Notes:</br><textarea id="exam_note" name="exam_note" rows="6" cols="125" maxlength="388">
+            </textarea></p>
             </td>
             </tr>
             <tr style="height: 100px;">
             <td style="height: 90px; width: 764px;" colspan="3">
-            <p>Plan:<input type="text"></p>
+            <p>Plan:<textarea id="plan_note" name="plan_note" rows="6" cols="125" maxlength="388"></textarea></p>
             </td>
             </tr>
             </tbody>
@@ -158,7 +160,7 @@
                 <tr style="height: 22px;">
                     <td style="height: 22px; width: 345px;"><strong>Telemedicine Exam Form</strong></td>
                     <td style="height: 22px; width: 374px;">
-                    <p>Physician:&nbsp;&nbsp;</p>
+                    <p>Physician:<input type="text" id="physician" name="physician_name"></p>
                     </td>
                     </tr>
             </tbody>
@@ -167,36 +169,36 @@
             <tbody>
             <tr style="height: 35px;">
             <td style="height: 35px;" colspan="2" width="763">
-            <p style="padding-left: 330px;"><strong>Prescription</strong></p>
+            <p style="padding-left: 320px;"><strong>Prescription</strong></p>
             </td>
             </tr>
             <tr style="height: 35px;">
             <td style="height: 35px;" width="367">
-            <p>Prescription needed:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yes&nbsp;  <input class="checkbox" type="checkbox"> No  <input class="checkbox" type="checkbox"></p>
+            <p>Prescription needed:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="Questions_Yes" name="Questions" value="yes"><label for="Questions_Yes">Yes</label><input type="radio" id="Questions_No" name="Questions" value="no"><label for="Questions_No">No</label></p>
             </td>
             <td style="height: 35px;" width="396">
-            <p>Prescription called in:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yes &nbsp; <input class="checkbox" type="checkbox"> No <input class="checkbox" type="checkbox"> </p>
+            <p>Prescription called in:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="Questions_Yes" name="Questions" value="yes"><label for="Questions_Yes">Yes</label><input type="radio" id="Questions_No" name="Questions" value="no"><label for="Questions_No">No</label> </p>
             </td>
             </tr>
             <tr style="height: 35px;">
             <td style="height: 35px;" width="367">
-            <p>Pharmacy name:<input type="text"></p>
+            <p>Pharmacy name:<input type="text" id="pharm_name" name="pharmacy_name"></p>
             </td>
-            <td style="height: 35px;" width="396">
-            <p>Pharmacy number:<input type="text"></p>
+            <td style="height: 35px;" widvth="396">
+            <p>Pharmacy number:<input type="text" id="pharm_num" name="pharmacy_number"></p>
             </td>
             </tr>
             <tr style="height: 35px;">
             <td style="height: 35px;" width="367">
-            <p>EHR Prescription id #:<input type="text"></p>
+            <p>EHR Prescription id #:<input type="text" id="presc_id" name="prescription_id"></p>
             </td>
             <td style="height: 35px;" width="396">
-            <p>&nbsp;</p>
             </td>
             </tr>
             <tr style="height: 100px;">
             <td style="height: 90px; width: 764px;" colspan="3">
-            <p>Notes:</p>
+            <p>Notes:</br><textarea id="pres_note" name="prescription_note" rows="6" cols="125" maxlength="388">
+            </textarea></p>
             </td>
             </tr>
             </tbody>
@@ -210,12 +212,12 @@
                 </tr>
                 <tr>
                 <td colspan="2" width="763">
-                <p>Instructed to call back for any change in vision or comfort level.&nbsp;<input class="checkbox" type="checkbox">No<input class="checkbox" type="checkbox"></p>
+                <p>Instructed to call back for any change in vision or comfort level.&nbsp;<input type="radio" id="Questions_Yes" name="Questions" value="yes"><label for="Questions_Yes">Yes</label><input type="radio" id="Questions_No" name="Questions" value="no"><label for="Questions_No">No</label></p>
                 </td>
                 </tr>
                 <tr>
                 <td width="391">
-                <p>Call office for appointment in: <input type="text"></p>
+                <p>Call office for appointment in: <input type="text" id="call_for_app" name="call_for_appointment"></p>
                 </td>
                 <td width="372">
                 <p>&nbsp;</p>
@@ -223,13 +225,13 @@
                 </tr>
                 <tr>
                 <td colspan="2" width="763">
-                <p>Does patient need urgent appointment in office within next 7 days?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Yes &nbsp;<input class="checkbox" type="checkbox"> No<input class="checkbox" type="checkbox"> </p>
+                <p>Does patient need urgent appointment in office within next 7 days?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="Questions_Yes" name="Questions" value="yes"><label for="Questions_Yes">Yes</label><input type="radio" id="Questions_No" name="Questions" value="no"><label for="Questions_No">No</label></p>
                 <p>*if yes, do not bill for telehealth visit</p>
                 </td>
                 </tr>
                 <tr>
                 <td width="391">
-                <p>Date of urgent appointment:<input type="text"></p>
+                <p>Date of urgent appointment:<input type="date" id="date_urgent_care" name="date_urgent_care"></p>
                 </td>
                 <td width="372">
                 <p>&nbsp;</p>
@@ -241,19 +243,19 @@
                 <p style="padding-left: 30px;"><strong>Existing Patient:</strong></p>
                 <table style="width: 731px; margin-left: auto; margin-right: auto;">
                     <tbody>
-                    <tr style="height: 35.25px;">
-                    <td style="height: 35.25px; width: 82px;">
-                    <p><input type="checkbox"> G2012</p>
+                    <tr style="height: 35px;">
+                    <td style="height: 35px; width: 82px;">
+                    <p><input type="checkbox" id="G2012" name="G2012"> G2012</p>
                     </td>
-                    <td style="height: 35.25px; width: 505px;">&nbsp;Brief Communication/Call 5-10 Minutes medical discussion</td>
+                    <td style="height: 35px; width: 505px;">&nbsp;Brief Communication/Call 5-10 Minutes medical discussion</td>
                     </tr>
-                    <tr style="height: 13px;">
-                    <td style="height: 13px; width: 82px;"><input type="checkbox"> G2010</td>
-                    <td style="height: 13px; width: 505px;">&nbsp;Remote Eval recorded video/+or images, Includes interpret &amp; 24 hour F/U</td>
+                    <tr style="height: 35px;">
+                    <td style="height: 35px; width: 82px;"><input type="checkbox" id="G2010" name="G2010"> G2010</td>
+                    <td style="height: 35px; width: 505px;">&nbsp;Remote Eval recorded video/+or images, Includes interpret &amp; 24 hour F/U</td>
                     </tr>
                     <tr style="height: 35px;">
                     <td style="height: 35px; width: 82px;">
-                    <p><input type="checkbox"> 99421</p>
+                    <p><input type="checkbox"id="99421" name="99421"> 99421</p>
                     </td>
                     <td style="height: 35px; width: 505px;">
                     <p>E-Visit (up to 7 days cumulative time) 5 &ndash; 10 minutes</p>
@@ -261,7 +263,7 @@
                     </tr>
                     <tr style="height: 35px;">
                     <td style="height: 35px; width: 82px;">
-                    <p><input type="checkbox"> 99422</p>
+                    <p><input type="checkbox"id="99422" name="99422"> 99422</p>
                     </td>
                     <td style="height: 35px; width: 505px;">
                     <p>E-Visit (up to 7 days cumulative time) 11-20 minutes</p>
@@ -269,7 +271,7 @@
                     </tr>
                     <tr style="height: 35px;">
                     <td style="height: 35px; width: 82px;">
-                    <p><input type="checkbox"> 99423</p>
+                    <p><input type="checkbox"id="99423" name="99423"> 99423</p>
                     </td>
                     <td style="height: 35px; width: 505px;">
                     <p>E-Visit (up to 7 days cumulative time) 21 or more minutes</p>
@@ -281,13 +283,13 @@
                 <table style="width: 721px; margin-left: auto; margin-right: auto;">
                 <tbody>
                 <tr style="height: 13.25px;">
-                <td style="width: 180px; height: 13.25px;"> <input type="checkbox">  99211 E&amp;M Estab 5 Min</td>
-                <td style="width: 216px; height: 13.25px;"> <input type="checkbox"> 99212 E&amp;M Estab Minor 10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                <td style="width: 317px; height: 13.25px;"> <input type="checkbox"> 99213 E&amp;M Estab Low-mod</td>
+                <td style="width: 180px; height: 13.25px;"> <input type="checkbox" id="99211" name="99211">  99211 E&amp;M Estab 5 Min</td>
+                <td style="width: 216px; height: 13.25px;"> <input type="checkbox" id=" 99212" name=" 99212"> 99212 E&amp;M Estab Minor 10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td style="width: 317px; height: 13.25px;"> <input type="checkbox" id="99213" name="99213"> 99213 E&amp;M Estab Low-mod</td>
                 </tr>
                 <tr style="height: 13px;">
-                    <td style="width: 202px; height: 13px;"><input type="checkbox">99214 E&amp;M Estab Mod-hi 2&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                    <td style="width: 212px; padding-left: 30px; height: 13px;">&nbsp;<input type="checkbox">99215 E&amp;M Estab Mod-hi 4</td>
+                    <td style="width: 202px; height: 13px;"><input type="checkbox" id="99214" name="99214">99214 E&amp;M Estab Mod-hi 2&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td style="width: 212px; padding-left: 30px; height: 13px;">&nbsp;<input type="checkbox" id="99215 " name="99215 ">99215 E&amp;M Estab Mod-hi 4</td>
                 <td style="width: 317px; height: 13px;">&nbsp;</td>
                 </tr>
                 </tbody>
@@ -296,9 +298,9 @@
                 <table style="width: 731px; margin-left: auto; margin-right: auto;">
                 <tbody>
                 <tr>
-                <td style="width: 10px;"><input type="checkbox">99203: low&nbsp;&nbsp;</td>
-                <td style="width: 10px;">&nbsp;<input type="checkbox">99204: mod&nbsp;&nbsp;&nbsp;</td>
-                <td style="width: 145px;">&nbsp;&nbsp;<input type="checkbox">99205 high</td>
+                <td style="width: 10px;"><input type="checkbox" id="99203" name="99203">99203: low&nbsp;&nbsp;</td>
+                <td style="width: 10px;">&nbsp;<input type="checkbox" id="99204" name="99204">99204: mod&nbsp;&nbsp;&nbsp;</td>
+                <td style="width: 145px;">&nbsp;&nbsp;<input type="checkbox"  id="99205 " name="99205">99205 high</td>
                 </tr>
                 </tbody>
                 </table>
@@ -322,7 +324,7 @@
                 <tr style="height: 22px;">
                     <td style="height: 22px; width: 345px;"><strong>Telemedicine Exam Form</strong></td>
                     <td style="height: 22px; width: 374px;">
-                    <p>Physician:&nbsp;&nbsp;</p>
+                    <p>Physician:<input type="text" id="physician" name="physician_name"></p>
                     </td>
                 </tr>
             </tbody>
@@ -345,16 +347,16 @@
             <table class="moving" style="border-color: black; width: 735px; margin-left: auto; margin-right: auto;" border="black">
                 <tbody>
                 <tr>
-                <td width="793">
-                <p style="padding-left: 210px;"><strong>mymedicalimages.com Account Info</strong></p>
+                <td width="735">
+                <p style="padding-left: 260px;"><strong>mymedicalimages.com Account Info</strong></p>
                 <table style="border-color: black; width: 735px;" border="black">
                 <tbody>
                 <tr style="height: 35px;">
                 <td style="height: 35px;" width="412">
-                <p>Name</p>
+                <p>Name<input type="text" id="account_name" name="account_name"></p>
                 </td>
                 <td style="height: 35px;" width="366">
-                <p>Email Address</p>
+                <p>Email Address <input type="text" id="account_email" name="account_email"></p>
                 </td>
                 </tr>
                 <tr style="height: 35px;">
@@ -362,15 +364,15 @@
                 <p>NPI/Office #</p>
                 </td>
                 <td style="height: 35px;" width="366">
-                <p>Phone</p>
+                <p>Phone <input type="text" id="NPI_number" name="NPI_number"></p>
                 </td>
                 </tr>
                 <tr style="height: 35px;">
                 <td style="height: 35px;" width="412">
-                <p>Practice Address:</p>
+                <p>Practice Address: <input type="text" id="practice_address" name="practice_address"></p>
                 </td>
                 <td style="height: 35px;" width="366">
-                <p>Practice Phonne</p>
+                <p>Practice Phone: <input type="text" id="practice_phone" name="practice_phone"></p>
                 </td>
                 </tr>
                 </tbody>
@@ -378,7 +380,7 @@
                 </td>
                 </tr>
                 <tr>
-                <td width="793">
+                <td width="735">
                 <p>Disclaimer: This report was generated using information supplied by either an authorized user of the mymedicalimages.com account referenced above or another person at the request of an authorized user.</p>
                 <p>Mymedicalimages.com accepts no responsibility for any inaccuracy of the information supplied.</p>
                 </td>
@@ -399,3 +401,95 @@
     </page>
 </body>
 </html>
+
+<script>
+    var test = "10/10/1212";
+    document.getElementById("exam_date").value = test;
+    var physcian = "";
+    document.getElementById("physcian").value = physcian;
+    var date = "";
+    document.getElementById("exam_date").value = date;
+    var plname = "";
+    document.getElementById("patient_lname").value = plane;
+    var pfname = "";
+    document.getElementById("patient_fname").value = pfane;
+    var dob = "";
+    document.getElementById("DOB").value = dob;
+    var mr = "";
+    document.getElementById("patient_MR").value = mr ;
+    var pphone  = "";
+    document.getElementById("patient_phone").value = pphone;
+    var icarrier  = "";
+    document.getElementById("insurance_carrier").value = icarrier;
+    var iid = "";
+    document.getElementById("insurrance_id").value = iid;
+    var icarphone = "";
+    document.getElementById("insurrance_phone").value = icarphone;
+    var igroupid  = "";
+    document.getElementById("insurrance_group").value = igroupid;
+    var callstart = "";
+    document.getElementById("call_start_time").value = callstart ;
+    var callend = "";
+    document.getElementById("complaint_note").value = cnote;
+    var enote = "";
+    document.getElementById("exam_note").value = enote;
+    var pnote = "";
+    document.getElementById("plan_note").value = pnote;
+    var phname  = "";
+    document.getElementById("pharm_name").value = phname ;
+    var phnum = "";
+    document.getElementById("pharm_num").value = phnum ;
+    var ehrpid  = "";
+    document.getElementById("presc_id").value = ehrpid;
+    var prnote = "";
+    document.getElementById("pres_note").value = prnote;
+    var cfoa = "";
+    document.getElementById("call_for_app").value = cfoa;
+    var dateurgent = "";
+    document.getElementById("date_urgent_care").value = dateurgent;
+    var cfoa = "";
+document.getElementById("call_for_app").value = cfoa;
+
+var dateurgent = "";
+document.getElementById("date_urgent_care").value = dateurgent;
+
+var briefcall = "";
+document.getElementById("G2012").value = briefcall;
+
+var remoteeval = "";
+document.getElementById("G2010").value = remoteeval;
+
+var evisitshort = "";
+document.getElementById("99421").value = evisitshort;
+
+var evisitmid = "";
+document.getElementById("99422").value = evisitmid;
+var evisitlong = "";
+document.getElementById("99423").value = evisitlong;
+var estabshort= "";
+document.getElementById("99211").value = estabshort;
+var estabminor = "";
+document.getElementById("99212").value = estabminor;
+var establowmod= "";
+document.getElementById("99213").value = establowmod;
+var estabmodhigh2 = "";
+document.getElementById("99214").value = estabmodhigh2;
+var estabmodhigh4 = "";
+document.getElementById("99215 ").value = estabmodhigh4;
+var newlow = "";
+document.getElementById("99203").value = newlow;
+var newmid = "";
+document.getElementById("99204").value = newmid;
+var newhigh= "";
+document.getElementById("99205").value = newhigh;
+var actname = "";
+document.getElementById("account_name").value = actname;
+var actemail = "";
+document.getElementById("account_email").value = actemail;
+var actnpi = "";
+document.getElementById("NPI_number").value =actnpi;
+var praticeaddress = "";
+document.getElementById("practice_address").value = praticeaddress;
+var practicephone = "";
+document.getElementById("practice_phone").value =practicephone ;
+</script>
