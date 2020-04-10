@@ -1,5 +1,5 @@
 body {
-    background: rgb(204,204,204); 
+    background: white; 
     font-size: small;
   }
   p{
@@ -12,7 +12,7 @@ body {
     margin-bottom: 0.5cm;
     box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
   }
-  page[size="A4"] {  
+  page[size=""] {  
     width: 21cm;
     height: 29.7cm;
     padding-top:2.5rem; 
@@ -28,53 +28,156 @@ body {
       position: relative;
   }
 
-  .bottom{
-    position: absolute;
-    bottom: 2rem;
-   left:2rem;
-  }
-  
-  .checkbox{
-    border-radius: 50px;
-  }
+  body {
+    width: 8.5in;
+    height: 11in;
+     padding: 0;   
+    background:white; 
+    font-size: small;
+ }
+ p{
+   margin:4px!important;
+ }
+ page {
+   background: white;
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 0.5in;
+   box-shadow: 0 0 0.5in rgba(0,0,0,0.5);
+ }
+ page[size="letter"] {  
+   width: 21cm;
+   height: 29.7cm;
+   padding-top:2.5rem; 
+ }
+ @media print {
+   body, page {
+     margin: 0;
+     box-shadow: 0;
+   }
+ }
 
-  .no-outline:focus {
-    outline: none;
-    }
+ .container{
+     position: relative;
+ }
 
-    input {
-        border-top-style: hidden;
-        border-right-style: hidden;
-        border-left-style: hidden;
-        border-bottom-style: hidden;
-        }
+ .bottom{
+   position: absolute;
+   bottom: 2rem;
+  left:2rem;
+ }
+ 
+ .checkbox{
+   border-radius: 50px;
+ }
+
+ .no-outline:focus {
+   outline: none;
+   }
+
+   input {
+       border-top-style: hidden;
+       border-right-style: hidden;
+       border-left-style: hidden;
+       border-bottom-style: hidden;
+       }
 
 .page{
-    width: 21cm;
-    height: 29.7cm;
-    padding-top:2.5rem; 
-    overflow: auto;
+   position: relative;
+   width: 8.5in;
+   height: 11in;
+   
 }
+.page-content {
+   position: absolute;
+   width: 8.125in;
+   height: 10.625in;
+   left: 0.1875in;
+   top: 0.1875in;
+   background-color: rgba(0,0,0,0.2);
+ }
+
 
 .moving{
-    position: absolute;
-    bottom:6rem;
-    left:2rem;
+   position: absolute;
+   bottom:6rem;
+   left:2rem;
 }
 table {
-  border-collapse: collapse;
+ border-collapse: collapse;
 }
 
 table, th, td {
-  border: 1px solid black;
+ border: 1px solid black;
 }
 
 textarea{
-  border:none;
-  overflow: hidden;
+ border:none;
+ overflow: hidden;
+ resize: none;
 }
 
 .logo{
-   width: 11rem;
-   height: 3rem ;
+  width: 11rem;
+  height: 3rem ;
 }
+
+
+
+footer {
+ font-size: 9px;
+ color: #f00;
+ text-align: center;
+}
+
+@page {
+ size: letter portrait;
+ margin: .5in .5in .5in .5in;
+
+counter-increment: page;
+   counter-reset: page 1;
+   @top-right {
+       content: "Page " counter(page) " of " counter(pages);
+}
+
+@media print {
+   thead { display: table-header-group; }
+   tfoot { display: table-footer-group; }
+   
+   footer {
+   position: fixed;
+   bottom: 0;
+ }
+
+ .content-block, p {
+   page-break-inside: avoid;
+ }
+
+ html, body {
+   width: 210mm;
+   height: 297mm;
+ }
+}
+
+@media screen {
+thead { display: block; }
+tfoot { display: block; }
+}
+
+#page-container {
+ position: relative;
+ min-height: 100vh;
+}
+
+#content-wrap {
+ padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ height: 2.5rem;            /* Footer height */
+}
+
+
