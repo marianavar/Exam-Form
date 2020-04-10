@@ -9,13 +9,12 @@ body {
     background: white;
     display: block;
     margin: 0 auto;
-    margin-bottom: 0.5cm;
+    margin-bottom: 0.2cm;
     box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
   }
-  page[size=""] {  
+  page[size="letter"] {  
     width: 21cm;
-    height: 29.7cm;
-    padding-top:2.5rem; 
+    height: 29.2cm;
   }
   @media print {
     body, page {
@@ -26,6 +25,7 @@ body {
 
   .container{
       position: relative;
+      padding-top:0;
   }
 
   body {
@@ -42,13 +42,13 @@ body {
    background: white;
    display: block;
    margin: 0 auto;
-   margin-bottom: 0.5in;
+   margin-bottom: 0.1in;
    box-shadow: 0 0 0.5in rgba(0,0,0,0.5);
  }
  page[size="letter"] {  
    width: 21cm;
-   height: 29.7cm;
-   padding-top:2.5rem; 
+   height: 29.2cm;
+   padding-bottom:0;
  }
  @media print {
    body, page {
@@ -63,10 +63,12 @@ body {
 
  .bottom{
    position: absolute;
-   bottom: 2rem;
-  left:2rem;
+   bottom: 6rem;
+   left:2rem;
+   margin-bottom: 0.1in;
  }
  
+
  .checkbox{
    border-radius: 50px;
  }
